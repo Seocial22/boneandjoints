@@ -10,6 +10,7 @@
     "generate-sitemap": "next-sitemap"
   },
   "dependencies": {
+    "@next/third-parties": "^16.2.10",
     "axios": "^1.8.2",
     "cheerio": "^1.0.0",
     "emailjs-com": "^3.2.0",

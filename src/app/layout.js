@@ -6,6 +6,7 @@ import FloatingContact1 from '@/components/layout/FloatingContact1';
 import Script from 'next/script';
 import FirstVisitPopup from '@/components/FirstVisitPopup';
 
+
 export const metadata = {
  metadataBase: new URL('https://boneandjoints.in'),
  title: 'Dr. Abhishek Saxena - Orthopedic Surgeon In Ajmer',
