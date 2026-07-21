@@ -139,7 +139,7 @@ const AllCondition = () => {
         animate={titleInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.5 }}
       >
-        <h2 className="text-4xl font-bold text-center mb-8 text-blue-600">Pains We Treat</h2>
+        <h2 className="text-4xl font-bold text-center mb-8 text-blue-600">Our Areas of Expertise</h2>
         <div className="text-center mb-6">
           <p className="text-gray-600">Some of our common areas of expertise have been listed below</p>
         </div>
