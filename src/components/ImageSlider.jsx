@@ -17,7 +17,7 @@ const slides = [
     subtitle: "Your Path To Recovery Starts Here, With Our Expertise"
   },
   {
-    image: "/images/slide3.jpg",
+    image: "/images/slide3.webp",
     title: "Dr. Abhishek Saxena",
     subtitle: "Shoulder, Knee & Sports Injury Treatment"
   }

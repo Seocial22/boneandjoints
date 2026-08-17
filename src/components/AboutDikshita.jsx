@@ -106,7 +106,7 @@ const AboutDeekshita = () => {
 
   return (
     <main
-      style={{ fontFamily: "'DM Sans', sans-serif" }}
+      style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
       className="bg-[#f8f9fc] overflow-hidden"
     >
       {/* ══════════════════════════════════════
@@ -202,7 +202,7 @@ const AboutDeekshita = () => {
                 <span className="h-px w-10 bg-cyan-400/70" />
                 <span
                   className="text-xs sm:text-sm tracking-[0.2em] uppercase font-medium text-cyan-400"
-                  style={{ fontFamily: "'DM Sans', sans-serif" }}
+                  style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
                 >
                   Consultant Physiotherapist
                 </span>
@@ -211,7 +211,7 @@ const AboutDeekshita = () => {
               {/* Name */}
               <motion.h1
                 variants={fadeUp(0.05)}
-                style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                style={{ fontFamily: "var(--font-cormorant), serif" }}
                 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.05] mb-4 tracking-tight"
               >
                 Dr. Deekshita
@@ -297,7 +297,7 @@ const AboutDeekshita = () => {
               className="text-center group"
             >
               <div
-                style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                style={{ fontFamily: "var(--font-cormorant), serif" }}
                 className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-blue-700 to-cyan-500 mb-1"
               >
                 {s.value}
@@ -326,7 +326,7 @@ const AboutDeekshita = () => {
               What She Does
             </span>
             <h2
-              style={{ fontFamily: "'Cormorant Garamond', serif" }}
+              style={{ fontFamily: "var(--font-cormorant), serif" }}
               className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight"
             >
               Professional Skills{" "}
@@ -385,7 +385,7 @@ const AboutDeekshita = () => {
               Academic Background
             </span>
             <h2
-              style={{ fontFamily: "'Cormorant Garamond', serif" }}
+              style={{ fontFamily: "var(--font-cormorant), serif" }}
               className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight"
             >
               Education &amp;{" "}
@@ -425,7 +425,7 @@ const AboutDeekshita = () => {
 
                   {/* Degree */}
                   <h3
-                    style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                    style={{ fontFamily: "var(--font-cormorant), serif" }}
                     className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1 leading-tight"
                   >
                     {edu.degree}
@@ -479,7 +479,7 @@ const AboutDeekshita = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            style={{ fontFamily: "'Cormorant Garamond', serif" }}
+            style={{ fontFamily: "var(--font-cormorant), serif" }}
             className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6"
           >
             Ready for a{" "}

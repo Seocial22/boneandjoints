@@ -11,6 +11,17 @@ const nextConfig = {
           "/blog/best-arthroscopy-surgery-ajmer-joint-pain-treatment",
         permanent: true, // 301 Redirect
       },
+      {
+        source: '/blog/back-pain-specialist-surgeon-in-ajmer-dr-abhishek-saxena',
+        destination: '/blog/best-back-pain-specialist-surgeon-in-ajmer-dr-abhishek-saxena',
+        permanent: true,
+      },
+      {
+        source: '/blog/arthroscopy-surgery-ajmer-joint-pain-treatment',
+        destination: '/blog/best-arthroscopy-surgery-ajmer-joint-pain-treatment',
+        permanent: true,
+      },
+            
     ];
   },
 };

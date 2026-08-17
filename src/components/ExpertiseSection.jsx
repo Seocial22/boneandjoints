@@ -157,13 +157,13 @@ const ExpertiseSection = () => {
     {
       title: "Back Injury",
       description: "Treatment for back injuries includes expert care for sports-related injuries, ensuring faster recovery and helping individuals return to their peak performance after hip, ankle, elbow, or wrist injuries.",
-      imageSrc: "/images/backinjury.jpg",
+      imageSrc: "/images/back-injuries.webp",
       linkUrl: "/sports-injury/back-injury"
     },
     {
       title: "Sprains",
       description: "Sprain treatment includes proper diagnosis and treatment to ensure a quick recovery, whether it's an ankle, wrist, or knee sprain. This specialized care ensures effective relief and rehabilitation.",
-      imageSrc: "/images/sprain.jpg",
+      imageSrc: "/images/sprain.webp",
       linkUrl: "/sports-injury/sprains"
     }
   ];

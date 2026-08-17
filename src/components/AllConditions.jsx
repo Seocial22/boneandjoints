@@ -194,7 +194,6 @@ const AllCondition = () => {
                 alt={selectedProcedure}
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
-                priority={selectedProcedure === 'Shoulder Arthroscopy'}
                 className="object-fit rounded-lg"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-blue-900/10 to-cyan-500/10 rounded-lg" />

@@ -126,7 +126,6 @@ const WhyChooseUs = () => {
                   fill
                   sizes="(max-width: 768px) 100vw, 40vw"
                   className="object-cover"
-                  priority
                 />
                 <motion.div 
                   className="absolute inset-0 bg-blue-900/20"
