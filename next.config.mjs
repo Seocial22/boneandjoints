@@ -21,7 +21,21 @@ const nextConfig = {
         destination: '/blog/best-arthroscopy-surgery-ajmer-joint-pain-treatment',
         permanent: true,
       },
-            
+      {
+        source: '/about-us',
+        destination: '/about',
+        permanent: true,
+      },
+      {
+        source: '/conditions/knee-pain-causes-advanced-treatment-options-ajmer',
+        destination: '/blog/knee-pain-causes-advanced-treatment-options-ajmer',
+        permanent: true,
+      },
+      {
+        source: '/blogs',
+        destination: '/blog',
+        permanent: true,
+      },      
     ];
   },
 };
