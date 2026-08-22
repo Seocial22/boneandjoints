@@ -9,7 +9,7 @@ const SportsInjuryService = () => {
   const serviceCards = [
     {
       title: "Sprains",
-      image: "/images/sprains.webp",
+      image: "/images/sprain.webp",
       description: "Sprains are common injuries that occur when ligaments are stretched or torn, often affecting the ankles, wrists, or knees. Dr. Abhishek Saxena provides effective treatment plans to reduce pain, promote healing, and prevent future injuries.",
       features: [
         "Immediate pain relief and swelling reduction",

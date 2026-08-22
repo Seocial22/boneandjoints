@@ -126,14 +126,15 @@ export default function ImageSlider() {
                     
                     <div className="pt-4 md:pt-6">
                       {/* Improved button with animation feedback */}
-                      <Link href="/bookconsultation">
-                      <button 
+                      <Link 
+                        href="/bookconsultation"
                         onClick={handleAppointmentClick}
-                        className={`group relative cursor-pointer rounded-full overflow-hidden ${
+                        tabIndex={activeIndex === index ? 0 : -1}
+                        className={`group relative inline-block cursor-pointer rounded-full overflow-hidden ${
                           isButtonAnimating ? 'animate-button-press' : ''
                         } bg-blue-600 px-6 py-3 sm:px-6 sm:py-3 md:px-8 md:py-4 text-sm md:text-base lg:text-lg font-medium text-white transition-all duration-300 hover:bg-blue-700 active:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 -mx-0`}
                         style={{ touchAction: 'manipulation' }}
-                        disabled={isButtonAnimating}
+                        aria-disabled={isButtonAnimating || activeIndex !== index}
                       >
                         <span className="relative z-10 block">
                           {isButtonAnimating ? (
@@ -146,7 +147,6 @@ export default function ImageSlider() {
                           )}
                         </span>
                         <span className="absolute bottom-0 left-0 h-0 w-full bg-blue-800 transition-all duration-300 group-hover:h-full"></span>
-                      </button>
                       </Link>
                     </div>
                   </div>

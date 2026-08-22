@@ -121,6 +121,7 @@ const Header = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="hover:text-gray-200 transition-colors"
+                aria-label="Facebook Profile"
               >
                 <Facebook size={16} />
               </a>
@@ -129,6 +130,7 @@ const Header = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="hover:text-gray-200 transition-colors"
+                aria-label="Instagram Profile"
               >
                 <Instagram size={16} />
               </a>
@@ -236,6 +238,7 @@ const Header = () => {
             <button 
               onClick={handleMobileMenuToggle}
               className="lg:hidden text-gray-700 hover:text-blue-600 transition-colors"
+              aria-label="Toggle Menu"
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>

@@ -58,6 +58,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 hover:text-blue-800 transition-colors duration-300"
+                  aria-label="Facebook Profile"
                 >
                   <Facebook size={24} />
                 </a>
@@ -66,6 +67,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-pink-600 hover:text-pink-800 transition-colors duration-300"
+                  aria-label="Instagram Profile"
                 >
                   <Instagram size={24} />
                 </a>

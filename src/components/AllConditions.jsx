@@ -210,15 +210,19 @@ const AllCondition = () => {
                 {procedures[selectedProcedure]?.description || 'Description coming soon...'}
               </p>
               
-              <Link href={`${procedures[selectedProcedure]?.slug || selectedProcedure.toLowerCase().replace(/ /g, '-')}`}>
-                <motion.button
-                  className="px-6 py-2 rounded-lg text-white bg-gradient-to-r from-[#1E0B9B] to-[#07CCEC] hover:shadow-lg"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="inline-block"
+              >
+                <Link
+                  href={`${procedures[selectedProcedure]?.slug || selectedProcedure.toLowerCase().replace(/ /g, '-')}`}
+                  aria-label={`Read more about ${selectedProcedure}`}
+                  className="px-6 py-2 rounded-lg text-white bg-gradient-to-r from-[#1E0B9B] to-[#07CCEC] hover:shadow-lg inline-block text-center cursor-pointer"
                 >
                   Read More
-                </motion.button>
-              </Link>
+                </Link>
+              </motion.div>
             </motion.div>
           </motion.div>
         </AnimatePresence>

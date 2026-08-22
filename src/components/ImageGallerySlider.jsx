@@ -233,6 +233,7 @@ const ImageGallerySlider = () => {
               onClick={navigateImage('prev')}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
+              aria-label="Previous Image"
             >
               <ChevronLeft className="w-8 h-8 text-white" />
             </motion.button>
@@ -242,6 +243,7 @@ const ImageGallerySlider = () => {
               onClick={navigateImage('next')}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
+              aria-label="Next Image"
             >
               <ChevronRight className="w-8 h-8 text-white" />
             </motion.button>
@@ -252,6 +254,7 @@ const ImageGallerySlider = () => {
               onClick={closeLightbox}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
+              aria-label="Close Lightbox"
             >
               <X className="w-8 h-8 text-white" />
             </motion.button>
