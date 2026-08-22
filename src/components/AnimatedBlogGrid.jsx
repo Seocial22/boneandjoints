@@ -261,7 +261,7 @@ export default function AnimatedBlogGrid({ blogs }) {
                     className="w-full h-full"
                   >
                     <Image
-                      src={blog.image || '/images/placeholder.jpg'}
+                      src={blog.image || '/images/placeholder.webp'}
                       alt={blog.alt || blog.title}
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

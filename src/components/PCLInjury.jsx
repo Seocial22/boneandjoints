@@ -10,7 +10,7 @@ const PCLInjury = () => {
   return (
     <>
      <AboutHero
-          bannerImage="/images/acl-injury1.png"
+          bannerImage="/images/acl-injury1.webp"
           title="Dr. Abhishek Saxena"
           subtitle="PCL Injury Recovery: Your Game Plan Starts Here"
           breadcrumbs={[
@@ -28,7 +28,7 @@ const PCLInjury = () => {
                 <div className="h-28 w-24 rounded-full bg-[#C3E1F2] flex items-center justify-center">
                  <div className="relative h-28 w-24">
                            <Image
-                               src="/images/abhishek.png"
+                               src="/images/abhishek.webp"
                                alt="Dr. Abhishek Saxena"
                                fill
                                className="rounded-full object-cover"
@@ -99,7 +99,7 @@ const PCLInjury = () => {
             <div className="mb-8">
               <div className="relative aspect-square w-full max-w-2xl mx-auto bg-gray-200 rounded-lg overflow-hidden">
                                <Image
-                                  src="/images/pcl-injury.png"
+                                  src="/images/pcl-injury.webp"
                                   alt="PCL Injury Procedure"
                                   fill
                                   className="object-cover"

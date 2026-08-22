@@ -10,7 +10,7 @@ const LigamentInjury = () => {
   return (
     <>
      <AboutHero
-          bannerImage="/images/MPFL-MCL-LCL.png"
+          bannerImage="/images/MPFL-MCL-LCL.webp"
           title="Dr. Abhishek Saxena"
           subtitle="Sidekicks of the Knee: MPFL, MCL & LCL Injuries Solution"
           breadcrumbs={[
@@ -28,7 +28,7 @@ const LigamentInjury = () => {
                 <div className="h-28 w-24 rounded-full bg-[#C3E1F2] flex items-center justify-center">
                  <div className="relative h-28 w-24">
                            <Image
-                               src="/images/abhishek.png"
+                               src="/images/abhishek.webp"
                                alt="Dr. Abhishek Saxena"
                                fill
                                className="rounded-full object-cover"
@@ -99,7 +99,7 @@ const LigamentInjury = () => {
             <div className="mb-8">
               <div className="relative aspect-square w-full max-w-2xl mx-auto bg-gray-200 rounded-lg overflow-hidden">
                                <Image
-                                  src="/images/lcl-injury.png"
+                                  src="/images/lcl-injury.webp"
                                   alt="Knee Ligament Injury"
                                   fill
                                   className="object-fit "

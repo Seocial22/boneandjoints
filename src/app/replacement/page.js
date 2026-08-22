@@ -32,7 +32,7 @@ export default function Replacement() {
     return (
       <div className="w-full overflow-x-hidden">
       <AboutHero 
-          bannerImage="/images/joint-replacement.png
+          bannerImage="/images/joint-replacement.webp
           "
           title="Dr. Abhishek Saxena"
           subtitle="Transforming Lives with Advanced Orthopedic Solutions"

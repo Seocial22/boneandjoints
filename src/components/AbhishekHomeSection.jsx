@@ -40,7 +40,7 @@ const AbhishekHomeSection = () => {
                             {/* Image Frame */}
                             <div className="relative rounded-3xl overflow-hidden aspect-[4/5] shadow-2xl border-8 border-white bg-[#C3E1F2]">
                                 <Image
-                                    src="/images/abhishek.png"
+                                    src="/images/abhishek.webp"
                                     alt="Dr. Abhishek Saxena"
                                     fill
                                     className="object-cover"

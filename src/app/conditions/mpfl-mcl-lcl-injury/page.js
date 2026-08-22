@@ -14,7 +14,7 @@ export const metadata = {
     type: "article",
     images: [
       {
-        url: "/images/mpfl-mcl-lcl-injury.png", // update with actual image path
+        url: "/images/mpfl-mcl-lcl-injury.webp", // update with actual image path
         width: 800,
         height: 600,
         alt: "MPFL, MCL, LCL Knee Injury Treatment by Dr. Abhishek Saxena",

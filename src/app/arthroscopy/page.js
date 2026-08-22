@@ -32,7 +32,7 @@ export default function Arthroscopy() {
     return (
         <div className="w-full overflow-x-hidden">
         <AboutHero 
-          bannerImage="/images/arthoscopy.png"
+          bannerImage="/images/arthoscopy.webp"
           title="Dr. Abhishek Saxena"
           subtitle="Transforming Lives with Advanced Orthopedic Solutions"
           breadcrumbs={[

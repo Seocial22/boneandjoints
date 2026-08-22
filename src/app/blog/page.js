@@ -36,7 +36,7 @@ export const metadata = {
     url: "https://boneandjoints.in/blog",
     images: [
       {
-        url: "/images/orthopedic-blog-og.jpg",
+        url: "/images/orthopedic-blog-og.webp",
         width: 1200,
         height: 630,
         alt: "Orthopedic Health Blogs by Dr. Abhishek Saxena",
@@ -65,7 +65,7 @@ export const metadata = {
     title: "Orthopedic Health Blogs by Dr. Abhishek Saxena",
     description:
       "Expert insights on joint care and orthopedic treatments from Ajmer specialist",
-    images: ["/images/orthopedic-blog-og.jpg"],
+    images: ["/images/orthopedic-blog-og.webp"],
   },
 
   // Additional structured data for local business
@@ -97,7 +97,7 @@ export default function BlogPage() {
           "@type": "Person",
           name: blog.author || "Dr. Abhishek Saxena",
         },
-        image: blog.image || "/images/placeholder.jpg",
+        image: blog.image || "/images/placeholder.webp",
       },
     })),
   };
@@ -105,7 +105,7 @@ export default function BlogPage() {
   return (
     <>
       <AboutHero
-        bannerImage="/images/blog.png"
+        bannerImage="/images/blog.webp"
         title="Dr. Abhishek Saxena"
         subtitle="Advanced Orthopedic Solutions: Restoring Strength, Mobility, and Hope"
         breadcrumbs={[{ label: "Blogs", path: "/blog" }]}

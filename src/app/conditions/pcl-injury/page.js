@@ -14,7 +14,7 @@ export const metadata = {
     type: "article",
     images: [
       {
-        url: "/images/pcl-injury.png", // update to your actual image path
+        url: "/images/pcl-injury.webp", // update to your actual image path
         width: 800,
         height: 600,
         alt: "PCL Reconstruction by Dr. Abhishek Saxena",

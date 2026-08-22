@@ -139,13 +139,13 @@ const ExpertiseSection = () => {
     {
       title: "Knee Arthroscopy",
       description: "Knee arthroscopy is a minimally invasive procedure used to treat conditions such as meniscus tears, ligament injuries, and other knee issues. It allows for faster recovery times and effective treatment of knee problems.",
-      imageSrc: "/images/kneearthroscopy.jpg",
+      imageSrc: "/images/kneearthroscopy.webp",
       linkUrl: "/arthroscopy/knee-arthroscopy"
     },
     {
       title: "Knee Replacement",
       description: "Knee replacement surgery is a solution for chronic knee pain caused by arthritis, injury, or degeneration. Using state-of-the-art technology, it provides long-term relief and improved knee function.",
-      imageSrc: "/images/kneereplacement.jpg",
+      imageSrc: "/images/kneereplacement.webp",
       linkUrl: "/replacement/knee-replacement"
     },
     {

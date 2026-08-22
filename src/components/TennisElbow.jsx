@@ -10,7 +10,7 @@ const TennisElbow = () => {
   return (
     <>
      <AboutHero
-          bannerImage="/images/elbow.png"
+          bannerImage="/images/elbow.webp"
           title="Dr. Abhishek Saxena"
           subtitle="Elbow Pain: Common Injuries and Treatments"
           breadcrumbs={[
@@ -28,7 +28,7 @@ const TennisElbow = () => {
                 <div className="h-28 w-24 rounded-full bg-[#C3E1F2] flex items-center justify-center">
                  <div className="relative h-28 w-24">
                            <Image
-                               src="/images/abhishek.png"
+                               src="/images/abhishek.webp"
                                alt="Dr. Abhishek Saxena"
                                fill
                                className="rounded-full object-cover"
@@ -99,7 +99,7 @@ const TennisElbow = () => {
             <div className="mb-8">
               <div className="relative aspect-square w-full max-w-2xl mx-auto bg-gray-200 rounded-lg overflow-hidden">
                                <Image
-                                  src="/images/tennis-elbow.jpg"
+                                  src="/images/tennis-elbow.webp"
                                   alt="Tennis Elbow Treatment"
                                   fill
                                   className="object-cover"

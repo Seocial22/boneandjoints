@@ -14,7 +14,7 @@ export const metadata = {
     type: "article",
     images: [
       {
-        url: "/images/meniscus-injury.png", // update to your actual image path
+        url: "/images/meniscus-injury.webp", // update to your actual image path
         width: 800,
         height: 600,
         alt: "Meniscus Tear Treatment by Dr. Abhishek Saxena",

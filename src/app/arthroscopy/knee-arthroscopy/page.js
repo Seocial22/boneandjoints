@@ -64,7 +64,7 @@ const KneeArthroscopy = () => {
   return (
     <>
      <AboutHero
-          bannerImage="/images/kneearthroscopy.jpg"
+          bannerImage="/images/kneearthroscopy.webp"
           title="Dr. Abhishek Saxena"
           subtitle="Transforming Lives with Advanced Orthopedic Solutions"
           breadcrumbs={[
@@ -82,7 +82,7 @@ const KneeArthroscopy = () => {
                 <div className="h-28 w-24 rounded-full bg-[#C3E1F2] flex items-center justify-center">
                  <div className="relative h-28 w-24">
                            <Image
-                               src="/images/abhishek.png"
+                               src="/images/abhishek.webp"
                                alt="Dr. Abhishek Saxena"
                                fill
                                className="rounded-full object-cover"

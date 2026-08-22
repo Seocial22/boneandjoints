@@ -18,7 +18,7 @@ export const metadata = {
       "Dr. Abhishek Saxena is a leading orthopedic specialist committed to transforming lives with advanced orthopedic solutions.",
     images: [
       {
-        url: "/images/abhishek.png",
+        url: "/images/abhishek.webp",
         width: 800,
         height: 600,
         alt: "Dr. Abhishek Saxena",
@@ -37,12 +37,12 @@ export default function AboutPage() {
   return (
     <>
       <AboutHero
-        bannerImage="/images/img3.png"
+        bannerImage="/images/img3.webp"
         title="Dr. Abhishek Saxena"
         subtitle="From Injury to Empowerment: The New Age of Orthopedics"
         breadcrumbs={[{ label: "About Us", path: "" }]}
       />
-      <AboutDoctor doctorImage="/images/abhishek.png" />
+      <AboutDoctor doctorImage="/images/abhishek.webp" />
       <StatsComponent />
       <ExpertiseSection />
       <ElfsightWidget />

@@ -9,7 +9,7 @@ const procedures = {
     'Slap Tears': {
       title: 'Slap Tears',
       description: 'A SLAP tear (Superior Labrum Anterior and Posterior) is an injury to the ring of cartilage surrounding the shoulder socket. This injury commonly occurs in athletes who perform overhead throwing motions and can cause pain, clicking, and reduced range of motion in the shoulder.',
-      image: '/images/slap-tears.png',
+      image: '/images/slap-tears.webp',
       slug: '/conditions/slaptears'
     },
     'Knee Arthroscopy': {
@@ -27,25 +27,25 @@ const procedures = {
     'ACL Injury': {
       title: 'ACL Injury',
       description: 'The Anterior Cruciate Ligament (ACL) is crucial for knee stability. ACL injuries commonly occur during sudden stops, direction changes, or landing awkwardly from jumps. Treatment may involve reconstruction surgery using a graft to restore knee stability and function.',
-      image: '/images/acl-injury.png',
+      image: '/images/acl-injury.webp',
       slug: '/conditions/acl-injury'
     },
     'PCL Injury': {
       title: 'PCL Injury',
       description: 'The Posterior Cruciate Ligament (PCL) prevents the shin bone from moving too far backward. PCL injuries typically occur from direct impact to the front of the knee. While some heal with conservative treatment, severe tears may require surgical reconstruction.',
-      image: '/images/pcl-injury.png',
+      image: '/images/pcl-injury.webp',
       slug: '/conditions/pcl-injury'
     },
     'Meniscus Injury': {
       title: 'Meniscus Injury',
       description: 'The meniscus is cartilage that acts as a shock absorber in your knee. Tears can occur from twisting movements or degenerative changes. Treatment options range from conservative management to arthroscopic repair, depending on the tear type and location.',
-      image: '/images/meniscus-injury.png',
+      image: '/images/meniscus-injury.webp',
       slug: '/conditions/meniscus-injury'
     },
     'MPFL/MCL/LCL Injury': {
       title: 'MPFL/MCL/LCL Injury',
       description: 'These ligaments provide stability to different areas of the knee. The Medial Patellofemoral Ligament (MPFL) stabilizes the kneecap, while the Medial and Lateral Collateral Ligaments (MCL/LCL) provide side stability. Treatment varies based on injury severity.',
-      image: '/images/lcl-injury.png',
+      image: '/images/lcl-injury.webp',
       slug: '/conditions/mpfl-mcl-lcl-injury'
     },
     'Shoulder Arthroscopy': {
@@ -69,43 +69,43 @@ const procedures = {
     'Rotator Cuff Tear': {
       title: 'Rotator Cuff Tear',
       description: 'The rotator cuff is a group of muscles and tendons that stabilize the shoulder. Tears can occur from injury or degeneration over time, causing pain and weakness. Treatment options range from physical therapy to surgical repair depending on tear severity.',
-      image: '/images/cuff-tear.png',
+      image: '/images/cuff-tear.webp',
       slug: '/conditions/rotator-cuff-tear'
     },
     'Injuries around Shoulder': {
       title: 'Injuries around Shoulder',
       description: 'This encompasses various conditions affecting the shoulder region, including bursitis, tendinitis, frozen shoulder, and AC joint injuries. Treatment approaches are tailored to the specific condition and may include conservative care or surgical intervention.',
-      image: '/images/injury-shoulder.jpg',
+      image: '/images/injury-shoulder.webp',
       slug: '/conditions/injuries-around-shoulder'
     },
     'Cartilage Injury': {
       title: 'Cartilage Injury',
       description: 'Cartilage injuries can occur in various joints and affect the smooth surface that cushions bone movement. Treatment options include microfracture, cartilage transplantation, or other advanced techniques to restore joint surface integrity.',
-      image: '/images/cartilage-injury.jpg',
+      image: '/images/cartilage-injury.webp',
       slug: '/conditions/cartilage-injury'
     },
     'ATFL Tear': {
       title: 'ATFL Tear',
       description: 'The Anterior Talofibular Ligament (ATFL) is commonly injured during ankle sprains. This ligament stabilizes the ankle joint, and severe tears may require surgical repair to restore stability and prevent chronic ankle instability.',
-      image: '/images/atfl-injury.jpg',
+      image: '/images/atfl-injury.webp',
       slug: '/conditions/atfl-tear'
     },
     'Tennis Elbow': {
       title: 'Tennis Elbow',
       description: 'Tennis elbow (lateral epicondylitis) is an overuse injury affecting the tendons that attach to the outer elbow. Despite its name, it can affect anyone who performs repetitive arm movements. Treatment typically begins with conservative measures but may require surgery in persistent cases.',
-      image: '/images/tennis-elbow.jpg',
+      image: '/images/tennis-elbow.webp',
       slug: '/conditions/tennis-elbow'
     },
     'Golfer Elbow': {
       title: 'Golfer Elbow',
       description: 'Golfer elbow medial epicondylitis affects the tendons on the inner side of the elbow. It caused by repetitive wrist and arm motions and can affect anyone, not just golfers. Treatment ranges from rest and physical therapy to surgical intervention in severe cases.',
-      image: '/images/golfers-elbow.jpg',
+      image: '/images/golfers-elbow.webp',
       slug: '/conditions/golfer-elbow'
     },
     'Hip Labral Tear': {
       title: 'Hip Labral Tear',
       description: 'The hip labrum is a ring of cartilage that helps secure the hip joint. Tears can result from trauma, repetitive movements, or structural abnormalities. Treatment may include arthroscopic repair to restore normal hip function and prevent further damage.',
-      image: '/images/labral-tear.jpg',
+      image: '/images/labral-tear.webp',
       slug: '/conditions/hip-labral-tear'
     }
   };

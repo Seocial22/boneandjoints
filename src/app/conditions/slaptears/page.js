@@ -15,7 +15,7 @@ export const metadata = {
     type: "article",
     images: [
       {
-        url: "/images/slap-tear.png", // update to your actual image path
+        url: "/images/slap-tear.webp", // update to your actual image path
         width: 800,
         height: 600,
         alt: "SLAP Tear Repair by Dr. Abhishek Saxena",

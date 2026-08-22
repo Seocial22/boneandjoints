@@ -17,7 +17,7 @@ export const metadata = {
     type: "article",
     images: [
       {
-        url: "/images/acl-injury.png", // ensure this path is correct on your production build
+        url: "/images/acl-injury.webp", // ensure this path is correct on your production build
         width: 800,
         height: 600,
         alt: "ACL Reconstruction Surgery by Dr. Abhishek Saxena",

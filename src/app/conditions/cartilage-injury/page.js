@@ -14,7 +14,7 @@ export const metadata = {
     type: "article",
     images: [
       {
-        url: "/images/cartilage-injury.png", // update with actual image path if different
+        url: "/images/cartilage-injury.webp", // update with actual image path if different
         width: 800,
         height: 600,
         alt: "Cartilage Injury Treatment by Dr. Abhishek Saxena",

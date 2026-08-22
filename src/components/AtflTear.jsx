@@ -10,7 +10,7 @@ const AtflTear = () => {
   return (
     <>
      <AboutHero
-          bannerImage="/images/atfltear.png"
+          bannerImage="/images/atfltear.webp"
           title="Dr. Abhishek Saxena"
           subtitle="Fixing a Torn Ankle Ligament (ATFL Tear)"
           breadcrumbs={[
@@ -28,7 +28,7 @@ const AtflTear = () => {
                 <div className="h-28 w-24 rounded-full bg-[#C3E1F2] flex items-center justify-center">
                  <div className="relative h-28 w-24">
                            <Image
-                               src="/images/abhishek.png"
+                               src="/images/abhishek.webp"
                                alt="Dr. Abhishek Saxena"
                                fill
                                className="rounded-full object-cover"
@@ -99,7 +99,7 @@ const AtflTear = () => {
             <div className="mb-8">
               <div className="relative aspect-square w-full max-w-2xl mx-auto bg-gray-200 rounded-lg overflow-hidden">
                                <Image
-                                  src="/images/atfl-injury.jpg"
+                                  src="/images/atfl-injury.webp"
                                   alt="ATFL Tear Injury"
                                   fill
                                   className="object-fit"

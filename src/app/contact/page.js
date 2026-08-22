@@ -23,7 +23,7 @@ export const metadata = {
     url: 'https://boneandjoints.in/contact',
     images: [
       {
-        url: '/images/orthopedic-clinic-contact.jpg',
+        url: '/images/orthopedic-clinic-contact.webp',
         width: 1200,
         height: 630,
         alt: 'Bone & Joint Clinic - Contact Dr. Abhishek Saxena',
@@ -51,7 +51,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Contact Dr. Abhishek Saxena - Orthopedic Specialist in Ajmer',
     description: 'Book an appointment with Ajmer\'s leading orthopedic surgeon',
-    images: ['/images/orthopedic-clinic-contact.jpg'],
+    images: ['/images/orthopedic-clinic-contact.webp'],
   },
 };
 
@@ -85,7 +85,7 @@ const localBusinessSchema = {
     "opens": "09:00",
     "closes": "18:00"
   },
-  "image": "/images/clinic-exterior.jpg",
+  "image": "/images/clinic-exterior.webp",
   "priceRange": "$$",
   "medicalSpecialty": "Orthopedics"
 };
@@ -100,7 +100,7 @@ export default function Contact() {
       />
 
       <AboutHero
-        bannerImage="/images/img2.png"
+        bannerImage="/images/img2.webp"
         title="Dr. Abhishek Saxena"
         subtitle="Rebuilding Lives, One Joint at a Time"
         breadcrumbs={[

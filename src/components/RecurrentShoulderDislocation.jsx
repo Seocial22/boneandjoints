@@ -10,7 +10,7 @@ const RecurrentShoulderDislocation = () => {
   return (
     <>
      <AboutHero
-          bannerImage="/images/shoulderdislocate.png"
+          bannerImage="/images/shoulderdislocate.webp"
           title="Dr. Abhishek Saxena"
           subtitle="Redefining Recovery with Modern Orthopedic Innovation"
           breadcrumbs={[
@@ -28,7 +28,7 @@ const RecurrentShoulderDislocation = () => {
                 <div className="h-28 w-24 rounded-full bg-[#C3E1F2] flex items-center justify-center">
                  <div className="relative h-28 w-24">
                            <Image
-                               src="/images/abhishek.png"
+                               src="/images/abhishek.webp"
                                alt="Dr. Abhishek Saxena"
                                fill
                                className="rounded-full object-cover"

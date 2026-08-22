@@ -14,7 +14,7 @@ export const metadata = {
     type: "article",
     images: [
       {
-        url: "/images/recurrent-shoulder-dislocation.png", // update with actual image path
+        url: "/images/recurrent-shoulder-dislocation.webp", // update with actual image path
         width: 800,
         height: 600,
         alt: "Recurrent Shoulder Dislocation Treatment by Dr. Abhishek Saxena",

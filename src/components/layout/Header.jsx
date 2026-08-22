@@ -143,7 +143,7 @@ const Header = () => {
             <Link href="/" className="flex items-center">
             <div className="relative">
   <Image 
-    src="/images/logoo.png"
+    src="/images/logoo.webp"
     alt="Dentist clinic"
     width={180}
     height={150}

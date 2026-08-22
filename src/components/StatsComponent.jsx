@@ -3,26 +3,27 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import Image from 'next/image';
 
 const StatsComponent = () => {
   const stats = [
     {
-      image: "/images/doctor.png", 
+      image: "/images/doctor.webp", 
       value: "10+",
       label: "Years of Experience"
     },
     {
-      image: "/images/love.png", 
+      image: "/images/love.webp", 
       value: "2000+",
       label: "Happy Patients"
     },
     {
-      image: "/images/stretcher.png", 
+      image: "/images/stretcher.webp", 
       value: "500+",
       label: "Successful Surgeries"
     },
     {
-      image: "/images/trophy.png", 
+      image: "/images/trophy.webp", 
       value: "50+",
       label: "Winning Awards"
     }
@@ -77,7 +78,7 @@ const StatsComponent = () => {
                 className="mb-5"
                 whileHover={{ scale: 1.1 }}
               >
-                <img 
+                <Image 
                   src={stat.image} 
                   alt={stat.label}
                   width={56}

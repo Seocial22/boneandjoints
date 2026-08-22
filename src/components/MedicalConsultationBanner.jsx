@@ -10,7 +10,7 @@ const MedicalConsultationBanner = () => {
       {/* Background Pattern - Left Side */}
       <div className="absolute left-0 top-0 w-full lg:w-[35%] h-full opacity-40">
         <Image
-          src="/images/background-pattern.png" // Update this path
+          src="/images/background-pattern.webp" // Update this path
           alt="Background pattern"
           fill
           className="object-cover"
@@ -70,7 +70,7 @@ const MedicalConsultationBanner = () => {
         <div className="flex-1 relative h-[300px] lg:h-full min-h-[450px] w-full lg:w-auto lg:max-w-[40%]">
           <div className="absolute inset-0 lg:inset-y-4 lg:right-4">
             <Image
-              src="/images/phone.jpg" // Update this path to your doctor image
+              src="/images/phone.webp" // Update this path to your doctor image
               alt="Medical professional on phone"
               fill
               className="object-cover object-center rounded-2xl"

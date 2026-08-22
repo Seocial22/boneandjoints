@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-const WhychoosingUs = ({ imagePath = "/images/doctor.png" }) => {
+const WhychoosingUs = ({ imagePath = "/images/doctor.webp" }) => {
   const features = [
     {
       icon: "🏥",

@@ -16,7 +16,7 @@ export const metadata = {
       type: "website",
       images: [
         {
-          url: "/images/nutrition-fitness.png", // update to actual image path
+          url: "/images/nutrition-fitness.webp", // update to actual image path
           width: 800,
           height: 600,
           alt: "Nutrition and Fitness - Bone and Joints",

@@ -10,7 +10,7 @@ const SLAPTear = () => {
   return (
     <>
      <AboutHero
-          bannerImage="/images/slaptear.png"
+          bannerImage="/images/slaptear.webp"
           title="Dr. Abhishek Saxena"
           subtitle="SLAP Tear: Treatment and Recovery"
           breadcrumbs={[
@@ -28,7 +28,7 @@ const SLAPTear = () => {
                 <div className="h-28 w-24 rounded-full bg-[#C3E1F2] flex items-center justify-center">
                  <div className="relative h-28 w-24">
                            <Image
-                               src="/images/abhishek.png"
+                               src="/images/abhishek.webp"
                                alt="Dr. Abhishek Saxena"
                                fill
                                className="rounded-full object-cover"
@@ -99,7 +99,7 @@ const SLAPTear = () => {
             <div className="mb-8">
               <div className="relative aspect-square w-full max-w-2xl mx-auto bg-gray-200 rounded-lg overflow-hidden">
                                <Image
-                                  src="/images/slap-tears.png"
+                                  src="/images/slap-tears.webp"
                                   alt="SLAP Tear Procedure"
                                   fill
                                   className="object-cover"

@@ -10,7 +10,7 @@ const InjuriesAroundShoulder = () => {
   return (
     <>
      <AboutHero
-          bannerImage="/images/injured-around-shoulder.png"
+          bannerImage="/images/injured-around-shoulder.webp"
           title="Dr. Abhishek Saxena"
           subtitle="Shoulder Pain: Causes and Treatments"
           breadcrumbs={[
@@ -28,7 +28,7 @@ const InjuriesAroundShoulder = () => {
                 <div className="h-28 w-24 rounded-full bg-[#C3E1F2] flex items-center justify-center">
                  <div className="relative h-28 w-24">
                            <Image
-                               src="/images/abhishek.png"
+                               src="/images/abhishek.webp"
                                alt="Dr. Abhishek Saxena"
                                fill
                                className="rounded-full object-cover"
@@ -99,7 +99,7 @@ const InjuriesAroundShoulder = () => {
             <div className="mb-8">
               <div className="relative aspect-square w-full max-w-2xl mx-auto bg-gray-200 rounded-lg overflow-hidden">
                                <Image
-                                  src="/images/injury-shoulder.jpg"
+                                  src="/images/injury-shoulder.webp"
                                   alt="Injuries Around Shoulder Treatment"
                                   fill
                                   className="object-cover"

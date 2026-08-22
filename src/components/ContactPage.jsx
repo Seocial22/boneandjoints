@@ -194,7 +194,7 @@ const ContactPage = () => {
               >
                 <div className="relative w-full" style={{ maxHeight: "650px" }}>
                   <Image
-                    src="/images/abhishek.png"
+                    src="/images/abhishek.webp"
                     alt="Dr. Abhishek Saxena"
                     width={650}
                     height={650}

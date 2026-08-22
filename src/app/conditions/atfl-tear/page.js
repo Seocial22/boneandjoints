@@ -14,7 +14,7 @@ export const metadata = {
     type: "article",
     images: [
       {
-        url: "/images/atfl-tear.png", // update path if your image is differently named
+        url: "/images/atfl-tear.webp", // update path if your image is differently named
         width: 800,
         height: 600,
         alt: "ATFL Tear Treatment by Dr. Abhishek Saxena",

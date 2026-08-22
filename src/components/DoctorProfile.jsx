@@ -11,7 +11,7 @@ const DoctorProfile = () => {
     title: "Orthopedic Surgeon In Ajmer",
     specialization: "Senior Consultant - Shoulder, Knee & Sport Injuries",
     description: " Welcome to the practice of Dr. Abhishek Saxena, Senior Consultant specializing in shoulder, knee, and sports injuries. Dr. Abhishek Saxena's academic journey reflects his commitment to excellence, starting with an MBBS from the prestigious MS Ramaiah Medical College, Bangalore, ranked 3rd in Bangalore by India Today in 2024. He further enhanced his expertise with a Diploma in Orthopedics from BMCRI, consistently ranked among the top 15 institutions in India and affiliated with the historic Victoria Hospital, and a DNB in Orthopedics from Tejasvini Hospital & SSCOT, one of Karnataka's premier orthopedic centers. Dr. Saxena is dedicated to providing world-class orthopedic care tailored to individual needs.",
-    image: "/images/abhishek.png",
+    image: "/images/abhishek.webp",
     readMoreLink: "/about",
   }]
   // Animation variants

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 const AboutDoctor = ({ 
-  doctorImage = '/images/abhishek.png'  // Default placeholder image
+  doctorImage = '/images/abhishek.webp'  // Default placeholder image
 }) => {
   // Intersection observer hooks for different sections
   const [titleRef, titleInView] = useInView({

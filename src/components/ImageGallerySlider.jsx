@@ -5,6 +5,7 @@ import { useInView } from 'react-intersection-observer';
 import Carousel from 'react-multi-carousel';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import 'react-multi-carousel/lib/styles.css';
+import Image from 'next/image';
 
 const ImageGallerySlider = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -18,31 +19,31 @@ const ImageGallerySlider = () => {
   const images = [
     {
       id: 1,
-      url: '/images/first.jpg',
+      url: '/images/first.webp',
       title: '',
       description: ''
     },
     {
       id: 2,
-      url: '/images/second.jpeg',
+      url: '/images/second.webp',
       title: '',
       description: ''
     },
     {
       id: 3,
-      url: '/images/third.jpeg',
+      url: '/images/third.webp',
       title: '',
       description: ''
     },
     {
       id: 4,
-      url: '/images/forth.jpg',
+      url: '/images/forth.webp',
       title: '',
       description: ''
     },
      {
       id: 5,
-      url: '/images/img1.png',
+      url: '/images/img1.webp',
       title: '',
       description: ''
     },
@@ -195,16 +196,18 @@ const ImageGallerySlider = () => {
               variants={imageVariants}
             >
               <motion.div 
-                className="relative overflow-hidden rounded-xl shadow-lg bg-white"
+                className="relative overflow-hidden rounded-xl shadow-lg bg-white h-72"
                 whileHover={{ boxShadow: "0 10px 25px rgba(0,0,0,0.2)" }}
                 transition={{ duration: 0.3 }}
               >
-                <img
+                <Image
                   src={image.url}
-                  alt={image.title}
-                  className="w-full h-72 object-cover"
+                  alt={image.title || "Gallery image"}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+                  className="object-cover"
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent text-white p-6">
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent text-white p-6 z-10">
                   <h3 className="text-xl font-bold mb-2">{image.title}</h3>
                   <p className="text-sm text-gray-200">{image.description}</p>
                 </div>
@@ -262,13 +265,12 @@ const ImageGallerySlider = () => {
               exit={{ scale: 0.9, opacity: 0 }}
               transition={{ duration: 0.3 }}
             >
-              <motion.img
+              <Image
                 src={selectedImage.url}
-                alt={selectedImage.title}
+                alt={selectedImage.title || "Selected gallery image"}
+                width={1000}
+                height={700}
                 className="w-full h-auto rounded-xl shadow-2xl"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.3 }}
               />
               <div className="text-white text-center mt-6">
                 <h3 className="text-2xl font-bold mb-2">{selectedImage.title}</h3>

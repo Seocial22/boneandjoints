@@ -14,7 +14,7 @@ export const metadata = {
     type: "article",
     images: [
       {
-        url: "/images/hip-labral-tear.png", // update to actual image path if different
+        url: "/images/hip-labral-tear.webp", // update to actual image path if different
         width: 800,
         height: 600,
         alt: "Hip Labral Tear Treatment by Dr. Abhishek Saxena",

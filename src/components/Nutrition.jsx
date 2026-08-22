@@ -334,7 +334,7 @@ export default function NutritionFitness() {
     return(
         <>
             <AboutHero
-                bannerImage="/images/nutrition1.png"
+                bannerImage="/images/nutrition1.webp"
                 title="Dr. Abhishek Saxena"
                 subtitle="Transforming Lives with Advanced Orthopedic Solutions"
                 breadcrumbs={[

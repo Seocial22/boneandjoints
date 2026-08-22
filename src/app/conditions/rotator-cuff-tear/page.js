@@ -14,7 +14,7 @@ export const metadata = {
     type: "article",
     images: [
       {
-        url: "/images/rotator-cuff-tear.png", // update with actual image path
+        url: "/images/rotator-cuff-tear.webp", // update with actual image path
         width: 800,
         height: 600,
         alt: "Rotator Cuff Tear Treatment by Dr. Abhishek Saxena",

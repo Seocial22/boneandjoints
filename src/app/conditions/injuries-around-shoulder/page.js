@@ -14,7 +14,7 @@ export const metadata = {
     type: "article",
     images: [
       {
-        url: "/images/shoulder-injury.png", // update with actual image path if different
+        url: "/images/shoulder-injury.webp", // update with actual image path if different
         width: 800,
         height: 600,
         alt: "Shoulder Injury Treatment by Dr. Abhishek Saxena",

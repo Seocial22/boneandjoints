@@ -166,7 +166,7 @@ const AboutDeekshita = () => {
                 {/* Image wrapper */}
                 <div className="relative rounded-[2rem] overflow-hidden aspect-[4/5] border border-white/10 shadow-2xl">
                   <Image
-                    src="/images/dikshita.jpeg"
+                    src="/images/dikshita.webp"
                     alt="Dr. Deekshita Yadav"
                     fill
                     priority

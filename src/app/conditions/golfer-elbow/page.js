@@ -14,7 +14,7 @@ export const metadata = {
     type: "article",
     images: [
       {
-        url: "/images/golfer-elbow.png", // update to actual image path if different
+        url: "/images/golfer-elbow.webp", // update to actual image path if different
         width: 800,
         height: 600,
         alt: "Golfer's Elbow Treatment by Dr. Abhishek Saxena",

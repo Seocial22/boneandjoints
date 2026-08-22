@@ -10,7 +10,7 @@ const GolfersElbow = () => {
   return (
     <>
      <AboutHero
-          bannerImage="/images/elbow2.png"
+          bannerImage="/images/elbow2.webp"
           title="Dr. Abhishek Saxena"
           subtitle="Get Back in the Swing: Treating Golfer’s Elbow"
           breadcrumbs={[
@@ -28,7 +28,7 @@ const GolfersElbow = () => {
                 <div className="h-28 w-24 rounded-full bg-[#C3E1F2] flex items-center justify-center">
                  <div className="relative h-28 w-24">
                            <Image
-                               src="/images/abhishek.png"
+                               src="/images/abhishek.webp"
                                alt="Dr. Abhishek Saxena"
                                fill
                                className="rounded-full object-cover"
@@ -99,7 +99,7 @@ const GolfersElbow = () => {
             <div className="mb-8">
               <div className="relative aspect-square w-full max-w-2xl mx-auto bg-gray-200 rounded-lg overflow-hidden">
                                <Image
-                                  src="/images/golfers-elbow.jpg"
+                                  src="/images/golfers-elbow.webp"
                                   alt="Golfer's Elbow Treatment"
                                   fill
                                   className="object-fit"

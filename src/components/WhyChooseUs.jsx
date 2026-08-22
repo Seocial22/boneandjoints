@@ -121,7 +121,7 @@ const WhyChooseUs = () => {
                 transition={{ duration: 0.3 }}
               >
                 <Image
-                  src="/images/surgery.jpg"
+                  src="/images/surgery.webp"
                   alt="Dr. Abhishek Saxena"
                   fill
                   sizes="(max-width: 768px) 100vw, 40vw"

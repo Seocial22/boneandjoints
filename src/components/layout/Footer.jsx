@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="container">
           <div className="flex justify-center">
             <Image
-              src="/images/footer-bg.png"
+              src="/images/footer-bg.webp"
               alt="Footer decorative image"
               width={1200}
               height={200}
@@ -37,7 +37,7 @@ const Footer = () => {
                 <Link href={"/about"}>
   
                   <Image
-                    src="/images/logoo.png"
+                    src="/images/logoo.webp"
                     alt="Dr. Abhishek Saxena Logo"
                     width={320}
                     height={100}

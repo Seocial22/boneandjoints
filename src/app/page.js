@@ -27,7 +27,7 @@ export const metadata = {
       "Expert orthopedic care for bone and joint problems at Jeevan Jyoti Hospital in Ajmer. Specializing in joint replacements, fractures, and sports injuries.",
     images: [
       {
-        url: "/images/abhishek.png",
+        url: "/images/abhishek.webp",
         width: 800,
         height: 600,
         alt: "Dr. Abhishek Saxena - Orthopedic Surgeon Ajmer",
@@ -46,7 +46,7 @@ export const metadata = {
     title: "Best Orthopedic Surgeon in Ajmer | Dr. Abhishek Saxena",
     description:
       "Advanced orthopedic treatments for bone and joint problems at Jeevan Jyoti Hospital in Ajmer.",
-    images: ["/images/abhishek.png"],
+    images: ["/images/abhishek.webp"],
   },
   robots: {
     index: true,
@@ -75,7 +75,7 @@ const structuredData = {
       jobTitle: "Orthopedic Surgeon",
       description: "Expert orthopedic surgeon specializing in joint replacements, sports injury treatment, fracture treatment, and comprehensive bone and joint care.",
       url: "https://boneandjoints.in",
-      image: "https://boneandjoints.in/images/abhishek.png",
+      image: "https://boneandjoints.in/images/abhishek.webp",
       email: "abhishek.saxena1120@gmail.com",
       telephone: "+91 86182 43967",
       yearsOfExperience: "10+",
@@ -270,7 +270,7 @@ const structuredData = {
         worstRating: "1"
       },
       priceRange: "$$",
-      image: "https://boneandjoints.in/images/abhishek.png",
+      image: "https://boneandjoints.in/images/abhishek.webp",
       sameAs: [
         "https://boneandjoints.in"
       ]
@@ -296,7 +296,7 @@ const structuredData = {
       name: "Dr. Abhishek Saxena - Orthopedic Practice",
       description: "Premier orthopedic surgery practice in Ajmer, Rajasthan, providing comprehensive bone and joint care.",
       url: "https://boneandjoints.in",
-      logo: "https://boneandjoints.in/images/abhishek.png",
+      logo: "https://boneandjoints.in/images/abhishek.webp",
       telephone: "+91 86182 43967",
       email: "abhishek.saxena1120@gmail.com",
       address: {

@@ -7,8 +7,8 @@ import Image from "next/image";
 
 const SITE_URL = "https://boneandjoints.in";
 const PUBLISHER_NAME = "Bone & Joints Clinic";
-const PUBLISHER_LOGO = "https://boneandjoints.in/images/logo.png";
-const DEFAULT_IMAGE = "/images/placeholder.jpg";
+const PUBLISHER_LOGO = "https://boneandjoints.in/images/logo.webp";
+const DEFAULT_IMAGE = "/images/placeholder.webp";
 
 // Function to read blogs data
 function getBlogs() {
@@ -53,7 +53,7 @@ export async function generateMetadata({ params }) {
       url: `https://boneandjoints.in/blog/${blog.slug}`,
       images: [
         {
-          url: blog.image || "/images/placeholder.jpg",
+          url: blog.image || "/images/placeholder.webp",
           width: 1200,
           height: 630,
           alt: blog.alt || blog.title,
@@ -69,7 +69,7 @@ export async function generateMetadata({ params }) {
       title: blog.title,
       description:
         blog.metaDescription || blog.excerpt || blog.content.substring(0, 160),
-      images: [blog.image || "/images/placeholder.jpg"],
+      images: [blog.image || "/images/placeholder.webp"],
     },
     robots: {
       index: true,
@@ -225,7 +225,7 @@ export default async function SingleBlogPage({ params }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 mt-6">
         <div className="relative w-full aspect-[3/1.5] rounded-xl overflow-hidden shadow-lg">
           <Image
-            src={blog.image || "/images/placeholder.jpg"}
+            src={blog.image || "/images/placeholder.webp"}
             alt={blog.alt || blog.title}
             fill
             priority
@@ -242,7 +242,7 @@ export default async function SingleBlogPage({ params }) {
             <div className="flex items-center">
               <div className="mr-4 w-20 h-20 relative items-center justify-center">
                 <Image
-                  src="/images/abhishek.jpg"
+                  src="/images/abhishek.webp"
                   alt="Dr. Abhishek Saxena"
                   width={80}
                   height={80}

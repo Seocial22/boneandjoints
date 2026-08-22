@@ -65,7 +65,7 @@ const SprainInjury = () => {
   return (
     <>
      <AboutHero
-          bannerImage="/images/sprain.png"
+          bannerImage="/images/sprain.webp"
           title="Dr. Abhishek Saxena"
           subtitle="Transforming Lives with Advanced Orthopedic Solutions"
           breadcrumbs={[
@@ -82,7 +82,7 @@ const SprainInjury = () => {
               <div className="flex items-center space-x-4">
                 <div className="relative h-28 rounded-full bg-[#C3E1F2] w-24">
                   <Image
-                    src="/images/abhishek.png"
+                    src="/images/abhishek.webp"
                     alt="Dr. Abhishek Saxena"
                     fill
                     className="rounded-full object-cover"
@@ -152,7 +152,7 @@ const SprainInjury = () => {
             <div className="mb-8">
               <div className="relative aspect-square w-full max-w-2xl mx-auto rounded-lg overflow-hidden">
                 <Image
-                  src="/images/sprains.webp"
+                  src="/images/sprain.webp"
                   alt="Sprain Treatment"
                   fill
                   className="object-cover"

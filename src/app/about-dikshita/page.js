@@ -13,7 +13,7 @@ export const metadata = {
       "Dr. Deekshita Yadav is a dedicated Consultant Physiotherapist committed to restoring mobility and improving quality of life.",
     images: [
       {
-        url: "/images/dikshita.jpeg",
+        url: "/images/dikshita.webp",
         width: 800,
         height: 600,
         alt: "Dr. Deekshita Yadav",

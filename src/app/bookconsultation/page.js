@@ -22,7 +22,7 @@ export const metadata = {
     url: 'https://boneandjoints.in/bookconsultation',
     images: [
       {
-        url: '/images/doctor-consultation-booking.jpg',
+        url: '/images/doctor-consultation-booking.webp',
         width: 1200,
         height: 630,
         alt: 'Book Appointment with Dr. Abhishek Saxena',
@@ -50,7 +50,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Book Online Appointment | Dr. Abhishek Saxena',
     description: 'Secure your consultation with Ajmer\'s leading orthopedic surgeon',
-    images: ['/images/doctor-consultation-booking.jpg'],
+    images: ['/images/doctor-consultation-booking.webp'],
   },
 };
 
