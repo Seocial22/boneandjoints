@@ -182,16 +182,8 @@ const AppointmentSection = () => {
   return (
     <section className="w-full bg-gradient-to-r from-blue-900 to-cyan-400 py-8 relative overflow-hidden" ref={ref}>
       {/* Animated background elements */}
-      <motion.div
-        className="absolute top-0 left-0 w-full h-full opacity-10"
-        animate={{
-          backgroundPosition: ["0% 0%", "100% 100%"],
-        }}
-        transition={{
-          duration: 20,
-          repeat: Infinity,
-          repeatType: "reverse"
-        }}
+      <div
+        className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none"
         style={{
           backgroundImage: "radial-gradient(circle, white 1px, transparent 1px)",
           backgroundSize: "50px 50px"
@@ -271,16 +263,6 @@ const AppointmentSection = () => {
             >
               <motion.span 
                 className="text-cyan-300 text-xl"
-                animate={{
-                  rotate: [0, 360],
-                  scale: [1, 1.2, 1]
-                }}
-                transition={{
-                  duration: 2,
-                  delay: index * 0.2,
-                  repeat: Infinity,
-                  repeatDelay: 5
-                }}
                 whileHover={{ 
                   rotate: 180,
                   scale: 1.3,
@@ -294,7 +276,7 @@ const AppointmentSection = () => {
           ))}
         </motion.div>
         
-        {/* Info Section - Enhanced with pulsing effect */}
+        {/* Info Section */}
         <motion.div 
           className="text-center mb-6 bg-blue-800/20 py-2 px-4 rounded-lg"
           variants={infoBoxVariants}
@@ -305,20 +287,16 @@ const AppointmentSection = () => {
             transition: { duration: 0.3 }
           }}
         >
-          <motion.p 
-            className="text-base md:text-lg text-cyan-100"
-            variants={pulseVariants}
-            animate="animate"
-          >
+          <p className="text-base md:text-lg text-cyan-100">
             Available Monday-Saturday | Emergency services 24/7
-          </motion.p>
+          </p>
         </motion.div>
         
-        {/* CTA Button - Enhanced with magnetic effect */}
+        {/* CTA Button */}
         <motion.div 
           className="text-center"
         >
-          <Link href="/bookconsultation">
+          <Link href="/bookconsultation" aria-label="Book Consultation with Dr. Abhishek Saxena">
             <motion.button 
               className="inline-flex items-center px-6 py-2 text-base md:text-lg font-semibold text-blue-900
                         bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50
@@ -326,40 +304,12 @@ const AppointmentSection = () => {
               variants={buttonVariants}
               whileHover="hover"
               whileTap="tap"
+              aria-label="Book Consultation"
             >
-              {/* Button shine effect */}
-              <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"
-                animate={{
-                  x: ["-100%", "100%"],
-                }}
-                transition={{
-                  duration: 2,
-                  repeat: Infinity,
-                  repeatDelay: 3
-                }}
-              />
-              
-              <motion.div
-                animate={{ 
-                  rotate: inView ? [0, 15, -15, 0, 360] : 0,
-                  scale: [1, 1.1, 1]
-                }}
-                transition={{ 
-                  duration: 1.5, 
-                  delay: 1.5,
-                  repeat: Infinity,
-                  repeatDelay: 4
-                }}
-                whileHover={{
-                  rotate: 360,
-                  transition: { duration: 0.5 }
-                }}
-                className="relative z-10"
-              >
+              <div className="relative z-10 flex items-center">
                 <Calendar className="w-5 h-5 mr-2" />
-              </motion.div>
-              <span className="relative z-10">Book Consultation</span>
+                <span>Book Consultation</span>
+              </div>
             </motion.button>
           </Link>
         </motion.div>

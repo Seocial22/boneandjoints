@@ -70,6 +70,7 @@ const CustomDot = ({ onClick, active }) => {
     <motion.button
       className={`h-3 w-3 mx-1 rounded-full ${active ? 'bg-blue-600' : 'bg-gray-300'}`}
       onClick={onClick}
+      aria-label="Carousel navigation dot"
       whileHover={{ scale: 1.3 }}
       whileTap={{ scale: 0.8 }}
     />
@@ -103,11 +104,12 @@ const ExpertiseCard = ({ title, description, imageSrc, linkUrl, inView }) => {
       <p className="text-gray-600 text-center mb-4">{description}</p>
       
       <div className="mt-auto">
-        <Link href={linkUrl}>
+        <Link href={linkUrl} aria-label={`Read more about ${title}`}>
           <motion.button
             whileHover={{ scale: 1.05, boxShadow: "0 5px 15px rgba(7, 204, 236, 0.3)" }}
             whileTap={{ scale: 0.95 }}
             className="text-blue-600 px-6 py-2 rounded-full font-semibold hover:shadow-lg transition-shadow"
+            aria-label={`Read more about ${title}`}
           >
             Read More
           </motion.button>

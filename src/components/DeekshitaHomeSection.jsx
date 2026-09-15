@@ -106,14 +106,12 @@ const DeekshitaHomeSection = () => {
                             </div>
 
                             {/* Experience Card */}
-                            <motion.div
-                                animate={{ y: [0, -10, 0] }}
-                                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                                className="absolute -top-8 -right-8 bg-blue-600 text-white p-6 rounded-3xl shadow-xl hidden md:block"
+                            <div
+                                className="absolute -top-8 -right-8 bg-blue-600 text-white p-6 rounded-3xl shadow-xl hidden md:block animate-gpu-float"
                             >
                                 <p className="text-3xl font-bold">5+</p>
                                 <p className="text-xs font-medium opacity-80 uppercase tracking-widest">Years of<br />Experience</p>
-                            </motion.div>
+                            </div>
                         </div>
                     </motion.div>
 
@@ -186,6 +184,7 @@ const DeekshitaHomeSection = () => {
                         >
                             <Link
                                 href="/about-dikshita"
+                                aria-label="Learn More About Dr. Deekshita Yadav"
                                 className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 transform hover:-translate-y-1"
                             >
                                 Learn More

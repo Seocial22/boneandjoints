@@ -195,6 +195,7 @@ const AllCondition = () => {
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-fit rounded-lg"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-blue-900/10 to-cyan-500/10 rounded-lg" />
             </motion.div>

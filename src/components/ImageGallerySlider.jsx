@@ -202,10 +202,11 @@ const ImageGallerySlider = () => {
               >
                 <Image
                   src={image.url}
-                  alt={image.title || "Gallery image"}
+                  alt={image.title || `Clinic & Surgery Gallery Image ${index + 1}`}
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                   className="object-cover"
+                  loading="lazy"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent text-white p-6 z-10">
                   <h3 className="text-xl font-bold mb-2">{image.title}</h3>

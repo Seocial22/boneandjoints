@@ -29,8 +29,11 @@ export default function ImageSlider() {
   const [isButtonAnimating, setIsButtonAnimating] = useState(false);
   const slideRef = useRef(null);
 
-  // Check if device is mobile
+  const [mounted, setMounted] = useState(false);
+
+  // Check if device is mobile and mark as mounted
   useEffect(() => {
+    setMounted(true);
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 768);
     };
@@ -81,81 +84,90 @@ export default function ImageSlider() {
     }, 600);
   };
 
+  const renderSlideContent = (slide, index) => (
+    <div className="relative h-[500px] sm:h-[550px] md:h-[600px] lg:h-screen w-full">
+      {/* Image with overlay gradient - Using Next.js Image component */}
+      <div className="absolute inset-0 bg-gradient-to-r from-gray-900/90 to-transparent z-10" />
+      <div className="relative h-full w-full">
+        <Image
+          src={slide.image}
+          alt={slide.title}
+          fill
+          sizes="100vw"
+          priority={index === 0}
+          fetchPriority={index === 0 ? "high" : "auto"}
+          quality={75}
+          className="object-cover"
+        />
+      </div>
+      
+      <div className="absolute left-0 top-0 flex h-full w-full items-center px-6 sm:px-8 md:px-12 lg:px-24 z-20">
+        <div className="max-w-xl lg:max-w-2xl space-y-4 md:space-y-6 lg:space-y-8 text-left">
+          <div className={index === 0 ? "space-y-3 md:space-y-4" : "space-y-3 md:space-y-4 opacity-0 animate-slide-fade-in"}>
+            <div className="inline-block rounded-full bg-blue-600/20 px-3 py-1 backdrop-blur-sm">
+              <span className="text-xs sm:text-sm font-medium text-blue-200">Orthopedic Specialist</span>
+            </div>
+            
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+              {slide.title}
+            </h2>
+            
+            <div className="h-1 w-16 md:w-20 lg:w-24 bg-blue-500" />
+            
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-100 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
+              {slide.subtitle}
+            </p>
+            
+            <div className="pt-4 md:pt-6">
+              {/* Improved button with animation feedback */}
+              <Link 
+                href="/bookconsultation"
+                onClick={handleAppointmentClick}
+                tabIndex={activeIndex === index ? 0 : -1}
+                className={`group relative inline-block cursor-pointer rounded-full overflow-hidden ${
+                  isButtonAnimating ? 'animate-button-press' : ''
+                } bg-blue-600 px-6 py-3 sm:px-6 sm:py-3 md:px-8 md:py-4 text-sm md:text-base lg:text-lg font-medium text-white transition-all duration-300 hover:bg-blue-700 active:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 -mx-0`}
+                style={{ touchAction: 'manipulation' }}
+                aria-disabled={isButtonAnimating || activeIndex !== index}
+              >
+                <span className="relative z-10 block">
+                  {isButtonAnimating ? (
+                    <span className="inline-flex items-center">
+                      <span className="mr-2">Processing</span>
+                      <span className="animate-pulse">...</span>
+                    </span>
+                  ) : (
+                    "Book an Appointment"
+                  )}
+                </span>
+                <span className="absolute bottom-0 left-0 h-0 w-full bg-blue-800 transition-all duration-300 group-hover:h-full"></span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
   return (
     <div className="relative h-[500px] sm:h-[550px] md:h-[600px] lg:h-screen w-full overflow-hidden bg-gradient-to-r from-gray-900 to-gray-800">
       {/* Decorative elements */}
       <div className="absolute -top-20 -right-20 h-32 w-32 md:h-64 md:w-64 rounded-full bg-blue-500/20 blur-3xl" />
       <div className="absolute -bottom-32 -left-20 h-40 w-40 md:h-80 md:w-80 rounded-full bg-blue-600/10 blur-3xl" />
       
-      <Slide {...properties} ref={slideRef}>
-        {slides.map((slide, index) => (
-          <div key={index} className="each-slide-effect">
-            <div className="relative h-[500px] sm:h-[550px] md:h-[600px] lg:h-screen w-full">
-              {/* Image with overlay gradient - Using Next.js Image component */}
-              <div className="absolute inset-0 bg-gradient-to-r from-gray-900/90 to-transparent z-10" />
-              <div className="relative h-full w-full">
-                <Image
-                  src={slide.image}
-                  alt={slide.title}
-                  fill
-                  sizes="100vw"
-                  priority={index === 0} // Priority loading for first slide
-                  quality={85}
-                  placeholder="blur"
-                  blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyIDMiPjxyZWN0IHdpZHRoPSIyIiBoZWlnaHQ9IjMiIGZpbGw9IiMxZTI5M2IiLz48L3N2Zz4=" 
-                  className="object-cover"
-                />
-              </div>
-              
-              <div className="absolute left-0 top-0 flex h-full w-full items-center px-6 sm:px-8 md:px-12 lg:px-24 z-20">
-                <div className="max-w-xl lg:max-w-2xl space-y-4 md:space-y-6 lg:space-y-8 text-left">
-                  <div className="space-y-3 md:space-y-4 opacity-0 animate-slide-fade-in">
-                    <div className="inline-block rounded-full bg-blue-600/20 px-3 py-1 backdrop-blur-sm">
-                      <span className="text-xs sm:text-sm font-medium text-blue-200">Orthopedic Specialist</span>
-                    </div>
-                    
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
-                      {slide.title}
-                    </h2>
-                    
-                    <div className="h-1 w-16 md:w-20 lg:w-24 bg-blue-500" />
-                    
-                    <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-100 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
-                      {slide.subtitle}
-                    </p>
-                    
-                    <div className="pt-4 md:pt-6">
-                      {/* Improved button with animation feedback */}
-                      <Link 
-                        href="/bookconsultation"
-                        onClick={handleAppointmentClick}
-                        tabIndex={activeIndex === index ? 0 : -1}
-                        className={`group relative inline-block cursor-pointer rounded-full overflow-hidden ${
-                          isButtonAnimating ? 'animate-button-press' : ''
-                        } bg-blue-600 px-6 py-3 sm:px-6 sm:py-3 md:px-8 md:py-4 text-sm md:text-base lg:text-lg font-medium text-white transition-all duration-300 hover:bg-blue-700 active:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 -mx-0`}
-                        style={{ touchAction: 'manipulation' }}
-                        aria-disabled={isButtonAnimating || activeIndex !== index}
-                      >
-                        <span className="relative z-10 block">
-                          {isButtonAnimating ? (
-                            <span className="inline-flex items-center">
-                              <span className="mr-2">Processing</span>
-                              <span className="animate-pulse">...</span>
-                            </span>
-                          ) : (
-                            "Book an Appointment"
-                          )}
-                        </span>
-                        <span className="absolute bottom-0 left-0 h-0 w-full bg-blue-800 transition-all duration-300 group-hover:h-full"></span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      {!mounted ? (
+        <div className="each-slide-effect">
+          {renderSlideContent(slides[0], 0)}
+        </div>
+      ) : (
+        <Slide {...properties} ref={slideRef}>
+          {slides.map((slide, index) => (
+            <div key={index} className="each-slide-effect">
+              {renderSlideContent(slide, index)}
             </div>
-          </div>
-        ))}
-      </Slide>
+          ))}
+        </Slide>
+      )}
       
       {/* Mobile-friendly custom controls */}
       {isMobile && (
@@ -202,7 +214,7 @@ export default function ImageSlider() {
                 : 'bg-white/40 hover:bg-white/60'
             }`}>
               {activeIndex === index && (
-                <span className="absolute -inset-1 rounded-full bg-blue-500/30 animate-ping"></span>
+                <span className="absolute -inset-1 rounded-full bg-blue-500/30 animate-ping will-change-transform"></span>
               )}
             </div>
           </button>

@@ -22,6 +22,7 @@ const Footer = () => {
               width={1200}
               height={200}
               className="w-full object-contain"
+              loading="lazy"
             />
           </div>
         </div>
@@ -34,7 +35,7 @@ const Footer = () => {
             {/* Logo and Description Column */}
             <div className="flex flex-col items-start">
               <div className="mb-6 w-full max-w-xs">
-                <Link href={"/about"}>
+                <Link href={"/about"} aria-label="About Dr. Abhishek Saxena">
   
                   <Image
                     src="/images/logoo.webp"
@@ -42,7 +43,7 @@ const Footer = () => {
                     width={320}
                     height={100}
                     className="h-24 w-auto object-contain"
-                    priority
+                    loading="lazy"
                   />
                 </Link>
               </div>

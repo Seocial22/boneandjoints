@@ -40,7 +40,7 @@ const FloatingContact = () => {
         <div className="relative">
           {/* WhatsApp-style Notification Popup - Shows temporarily */}
           {showNotification && (
-            <div className="absolute bottom-16 right-0 mb-2 bg-white rounded-lg shadow-lg p-3 w-64 animate-fadeIn">
+            <div className="absolute bottom-16 right-0 mb-2 bg-white rounded-lg shadow-lg p-3 w-64 animate-fadeIn will-change-transform transform-gpu">
               <div className="flex items-start gap-3">
                 <div className="bg-green-500 rounded-full p-2 flex-shrink-0">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" className="w-8 h-8">
@@ -60,13 +60,14 @@ const FloatingContact = () => {
                   <button 
                     onClick={handleWhatsAppClick}
                     className="mt-2 text-sm font-medium text-green-600 hover:text-green-800"
+                    aria-label="Reply to WhatsApp message"
                   >
                     Reply now
                   </button>
                 </div>
                 <div className="absolute -top-1 -right-1">
                   <span className="flex h-3 w-3">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75 will-change-transform transform-gpu"></span>
                     <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
                   </span>
                 </div>
@@ -81,7 +82,7 @@ const FloatingContact = () => {
             aria-label="WhatsApp Contact"
           >
             {/* Glow effect */}
-            <div className="absolute inset-0 bg-green-500 rounded-full blur opacity-75 animate-pulse"></div>
+            <div className="absolute inset-0 bg-green-500 rounded-full blur opacity-75 animate-pulse will-change-transform transform-gpu"></div>
             
             {/* Button background with WhatsApp green */}
             <div className="absolute inset-0 bg-green-500 rounded-full"></div>
@@ -99,7 +100,7 @@ const FloatingContact = () => {
             
             {/* Notification badge */}
             <span className="absolute -top-1 -right-1 flex h-5 w-5">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75 will-change-transform transform-gpu"></span>
               <span className="relative inline-flex rounded-full h-5 w-5 bg-red-500 items-center justify-center text-white text-xs font-bold">1</span>
             </span>
           </button>
@@ -116,7 +117,7 @@ const FloatingContact = () => {
             aria-label="Call Us"
           >
             {/* Glow effect */}
-            <div className="absolute inset-0 bg-blue-500 rounded-full blur opacity-75 animate-pulse"></div>
+            <div className="absolute inset-0 bg-blue-500 rounded-full blur opacity-75 animate-pulse will-change-transform transform-gpu"></div>
             
             {/* Button background with Call blue */}
             <div className="absolute inset-0 bg-blue-500 rounded-full"></div>

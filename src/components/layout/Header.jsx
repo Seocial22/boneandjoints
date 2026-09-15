@@ -100,17 +100,17 @@ const Header = () => {
 
   return (
     <>
-    <div className="h-[96px]"></div> 
+    <div className="h-[116px]"></div> 
     
     <header className="w-full fixed top-0 left-0 z-50 bg-white">
       <div className="w-full bg-gradient-to-r from-[#1E0B9B] to-[#07CCEC] text-white py-2">
         <div className="container mx-auto px-4 flex justify-end items-center space-x-6">
           <div className="flex items-center space-x-6">
-            <a href="mailto:abhishek.saxena1120@gmail.com" className="flex items-center space-x-2 text-sm hover:text-gray-200 transition-colors">
+            <a href="mailto:abhishek.saxena1120@gmail.com" className="flex items-center space-x-2 text-sm hover:text-gray-200 transition-colors" aria-label="Send email to Dr. Abhishek Saxena">
               <Mail size={16} />
               <span className="hidden sm:inline">abhishek.saxena1120@gmail.com</span>
             </a>
-            <a href="tel:+918618243967" className="flex items-center space-x-2 text-sm hover:text-gray-200 transition-colors">
+            <a href="tel:+918618243967" className="flex items-center space-x-2 text-sm hover:text-gray-200 transition-colors" aria-label="Call Dr. Abhishek Saxena">
               <Phone size={16} />
               <span className="hidden sm:inline">+91 8618243967</span>
             </a>
@@ -142,18 +142,17 @@ const Header = () => {
       <nav className="bg-white shadow-lg">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center h-20">
-            <Link href="/" className="flex items-center">
-            <div className="relative">
-  <Image 
-    src="/images/logoo.webp"
-    alt="Dentist clinic"
-    width={180}
-    height={150}
-    style={{ width: 'auto', height: 'auto' }}
-    className="rounded object-contain"
-    priority
-  />
-</div>
+            <Link href="/" className="flex items-center" aria-label="Home page">
+              <div className="relative h-14 w-44">
+                <Image 
+                  src="/images/logoo.webp"
+                  alt="Dr. Abhishek Saxena - Bone and Joints Clinic"
+                  fill
+                  sizes="176px"
+                  className="rounded object-contain"
+                  priority
+                />
+              </div>
             </Link>
 
             <div className="hidden lg:flex items-center space-x-8">
@@ -169,7 +168,11 @@ const Header = () => {
                 onMouseEnter={() => handleMenuHover('expertise', true)}
                 onMouseLeave={() => handleMenuHover('expertise', false)}
               >
-                <button className="flex items-center text-gray-700 hover:text-blue-600 transition-colors">
+                <button 
+                  className="flex items-center text-gray-700 hover:text-blue-600 transition-colors"
+                  aria-expanded={activeMenu === 'expertise'}
+                  aria-label="Our Expertise menu"
+                >
                   Our Expertise
                   <ChevronDown size={16} className="ml-1" />
                 </button>
@@ -238,7 +241,8 @@ const Header = () => {
             <button 
               onClick={handleMobileMenuToggle}
               className="lg:hidden text-gray-700 hover:text-blue-600 transition-colors"
-              aria-label="Toggle Menu"
+              aria-label={isMobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+              aria-expanded={isMobileMenuOpen}
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>

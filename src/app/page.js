@@ -1,18 +1,16 @@
-// app/page.jsx
+import dynamic from 'next/dynamic';
 import AllCondition from "@/components/AllConditions";
-import AppointmentSection from "@/components/AppointmentSection";
 import AbhishekHomeSection from "@/components/AbhishekHomeSection";
 import DeekshitaHomeSection from "@/components/DeekshitaHomeSection";
-import ElfsightWidget from "@/components/ElfsightWidget";
-
-
 import ImageSlider from "@/components/ImageSlider";
-import InstagramEmbed from "@/components/InstagramFeedWidget";
 import StatsComponent from "@/components/StatsComponent";
 import WhyChooseUs from "@/components/WhyChooseUs";
-import React, { Suspense } from 'react';
-const ExpertiseSection = React.lazy(() => import("@/components/ExpertiseSection"));
-const ImageGallerySlider = React.lazy(() => import("@/components/ImageGallerySlider"));
+import AppointmentSection from "@/components/AppointmentSection";
+
+const ExpertiseSection = dynamic(() => import("@/components/ExpertiseSection"));
+const ImageGallerySlider = dynamic(() => import("@/components/ImageGallerySlider"));
+const ElfsightWidget = dynamic(() => import("@/components/ElfsightWidget"));
+const InstagramEmbed = dynamic(() => import("@/components/InstagramFeedWidget"));
 
 // Static metadata for the home page
 export const metadata = {
@@ -334,14 +332,10 @@ export default function Home() {
       <ImageSlider />
       <AbhishekHomeSection />
       <StatsComponent />
-      <Suspense fallback={<div>Loading expertise section...</div>}>
       <ExpertiseSection />
-      </Suspense>
       <WhyChooseUs />
       <DeekshitaHomeSection />
-      <Suspense fallback={<div>Loading Gallery section...</div>}>
       <ImageGallerySlider />
-      </Suspense>
       <AllCondition />
       <ElfsightWidget />
       <AppointmentSection />

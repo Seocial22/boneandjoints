@@ -122,10 +122,11 @@ const WhyChooseUs = () => {
               >
                 <Image
                   src="/images/surgery.webp"
-                  alt="Dr. Abhishek Saxena"
+                  alt="Dr. Abhishek Saxena performing orthopedic surgery"
                   fill
                   sizes="(max-width: 768px) 100vw, 40vw"
                   className="object-cover"
+                  loading="lazy"
                 />
                 <motion.div 
                   className="absolute inset-0 bg-blue-900/20"

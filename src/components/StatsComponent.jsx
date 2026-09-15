@@ -84,6 +84,7 @@ const StatsComponent = () => {
                   width={56}
                   height={56}
                   className="w-14 h-14 object-contain"
+                  loading="lazy"
                 />
               </motion.div>
               <motion.h2 

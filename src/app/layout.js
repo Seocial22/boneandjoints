@@ -13,6 +13,7 @@ const cormorant = Cormorant_Garamond({
   style: ['normal', 'italic'],
   variable: '--font-cormorant',
   display: 'swap',
+  preload: false,
 });
 
 const dmSans = DM_Sans({
@@ -20,6 +21,7 @@ const dmSans = DM_Sans({
   weight: ['300', '400', '500', '600'],
   variable: '--font-dm-sans',
   display: 'swap',
+  preload: false,
 });
 
 
@@ -39,12 +41,14 @@ export default function RootLayout({ children }) {
  return (
    <html lang="en" className={`${cormorant.variable} ${dmSans.variable}`}>
      <head>        
+       <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
+       <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
        <Script
          src="https://www.googletagmanager.com/gtag/js?id=G-4DNZQ0ML0V"
-         strategy="afterInteractive"
+         strategy="lazyOnload"
        />
        {/* Designed and Developed by Jeetendra Singh Rathore (https://jeetdevv.vercel.app/) */}
-       <Script id="google-analytics" strategy="afterInteractive">
+       <Script id="google-analytics" strategy="lazyOnload">
          {`
            window.dataLayer = window.dataLayer || [];
            function gtag(){dataLayer.push(arguments);}

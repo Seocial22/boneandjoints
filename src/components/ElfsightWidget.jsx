@@ -20,16 +20,20 @@ const ElfsightWidget = () => {
   useEffect(() => {
     if (!inView) return;
 
-    const script = document.createElement("script");
-    script.src = "https://static.elfsight.com/platform/platform.js";
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      if (document.body.contains(script)) {
-        document.body.removeChild(script);
-      }
+    const loadScript = () => {
+      if (document.querySelector('script[src*="elfsight.com"]')) return;
+      const script = document.createElement("script");
+      script.src = "https://static.elfsight.com/platform/platform.js";
+      script.async = true;
+      script.defer = true;
+      document.body.appendChild(script);
     };
+
+    if (typeof window !== 'undefined' && 'requestIdleCallback' in window) {
+      window.requestIdleCallback(loadScript);
+    } else {
+      setTimeout(loadScript, 200);
+    }
   }, [inView]);
 
   const getPadding = () => {
